@@ -1,8 +1,4 @@
-﻿
-using System.Numerics;
-using System.Threading;
-
-string operation;
+﻿string operation;
 string difficulty;
 int a;
 int b;
@@ -132,10 +128,6 @@ void MainMenu()
     Console.WriteLine();
 }
 
-void GenerateTask()
-{
-
-}
 void PerformOperation (string taskDescription, int correctAnswer)
 {
     string input;
@@ -143,7 +135,7 @@ void PerformOperation (string taskDescription, int correctAnswer)
     string result;
     do
     {
-        Console.WriteLine($"{taskDescription}"); ;
+        Console.WriteLine($"{taskDescription}");
         input = Console.ReadLine();
     } while (!int.TryParse(input, out answer));
 
